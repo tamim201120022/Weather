@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="weatherText">Weather App</h1>
+    <p class="weatherPtag">Get weather update</p>
+    <div class="weather">
+        <div class="header">
+            <input type="text" placeholder="Enter City Name" class="input_box">
+            <button class="search_box material-symbols-outlined">Search</button>
+        </div>
+
+        <div class="cityNotFound">
+            <img src="/images/404.png" width="50%"  class="notFoundImage">
+            <h1 class="notFoundCity"></h1>
+        </div>
+
+        <div class="weatherDetails">
+            <div class="weather-body">
+                <div class="weatherContent">
+                    <img src="/images/snow.png" alt="" width="50%" class="weather_img" style="margin: 10px;">
+                <div class="weatherUpdate">
+                    <p class="temperature"><span class="temp_num">0</span><sup>°C</sup></p>
+                    <h2 class="description">Snow</h2>
+                </div>
+            </div>
+            </div>
+    
+            <div class="dayUpdate">
+                <h3>Sunrise: <span class="sunrise"> </span></h3>
+                <h3>Sunset: <span class="sunset"> </span></h3>
+            </div>
+    
+            <div class="humidityPressure">
+                <h3>Humidity: <span class="humidity"> </span></h3>
+                <h3>Pressure: <span class="pressure"> </span></h3>
+            </div>
+    
+            <div class="WindDegree">
+                <h3>Wind Speed: <span class="wind"> </span></h3>
+                <h3>Wind Direction: <span class="degree"> </span></h3>
+            </div>
+    
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
